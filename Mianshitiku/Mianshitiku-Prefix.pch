@@ -1,0 +1,27 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <AVOSCloud/AVOSCloud.h>
+    #import "PublicFunction.h"
+    #import "MBProgressHUD.h"
+    #import "PublicFunction.h"
+#endif
+
+// AVOSCloud相关
+#define StCategoryClassName @"StCategory"
+#define QuestionClassName @"Question"
+#define FeedbackClassName @"Feedback"
+#define AVOSID @"91h3klynk9n62z9ztpovt26mo3jy6iaofz15okfru2kxi65j"
+#define AVOSKEY @"pyvpr07nfk7mmy0t552g8an3idy955fz70z4a5xwkzd0mttx"
